@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulVerse - Inspiring Bios & Quotes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-blue-900 text-white py-4">
+        <div class="container mx-auto flex items-center justify-between px-4">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <svg id="soulverse-logo" width="50" height="50" viewBox="0 0 100 100" class="mr-2">
+                    <circle cx="50" cy="50" r="45" fill="#ffffff"/>
+                    <path d="M50 20 C30 20 20 40 30 60 C40 80 60 80 70 60 C80 40 70 20 50 20" fill="#1e3a8a"/>
+                    <text x="50" y="55" font-size="20" fill="#ffffff" text-anchor="middle" font-family="Arial">SV</text>
+                </svg>
+                <h1 class="text-2xl font-bold">SoulVerse</h1>
+            </div>
+            <!-- Search Bar -->
+            <input type="text" id="search" placeholder="Search by name or quote..." class="p-2 rounded text-black w-64">
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto py-8 px-4">
+        <div id="content" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Bios and Quotes will be injected here -->
+        </div>
+        <!-- Pagination -->
+        <div id="pagination" class="mt-8 flex justify-center space-x-4">
+            <button id="prev-page" class="px-4 py-2 bg-blue-900 text-white rounded disabled:opacity-50">Previous</button>
+            <span id="page-info" class="text-lg"></span>
+            <button id="next-page" class="px-4 py-2 bg-blue-900 text-white rounded disabled:opacity-50">Next</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-4 text-center">
+        <p>© 2025 SoulVerse. All rights reserved.</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
