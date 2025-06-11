@@ -1,0 +1,34 @@
+/* Custom styles to complement Tailwind */
+#soulverse-logo {
+    transition: transform 0.3s ease;
+}
+
+#soulverse-logo:hover {
+    transform: rotate(360deg);
+}
+
+.card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+input#search {
+    transition: width 0.3s ease;
+}
+
+input#search:focus {
+    width: 300px;
+    outline: none;
+}
+
+#pagination button {
+    transition: background-color 0.3s;
+}
+
+#pagination button:hover:not(:disabled) {
+    background-color: #1e40af;
+}
